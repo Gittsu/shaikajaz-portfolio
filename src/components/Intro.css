@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+
+.intro-screen {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Monsieur La Doulaise', cursive;
+}
+
+.intro-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.center-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.side-text {
+  color: white;
+  font-size: 3.8rem;
+  display: flex;
+}
+
+.char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: splitFadeIn 0.5s forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes splitFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-zoom {
+  animation: zoomIn 3s ease-in-out forwards;
+}
+
+.logo-zoom img {
+  width: 100px;
+  height: auto;
+  animation: growLogo 3s ease-in-out forwards;
+}
+
+@keyframes growLogo {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+}
+.welcome-text {
+
+  margin-bottom: 3rem;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6rem;
+  opacity: 100;
+  animation: fadeinText 2s ease-in-out 2s forwards;}
+
+  .qoute-text {
+   text-align: center;
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+   opacity: 0;
+   animation: fadeinText 2s ease-in-out 3s forwards;
+  }
+
+  .qoute-text .en{
+    font-family: 'poppins', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 0.3rem 0;
+  }
+
+  .qoute-text .ar{
+    font-family: 'Nato Naskh Arabic',serif;
+    font-size: 1.6rem;
+    color: white;
+    direction: rtl;
+  }
+
+  .bottom-quote {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  animation: fadeInText 2s ease-in-out 5s forwards;
+}
+
+
+
+.bottom-quote .en {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 0.2rem;
+}
+
+.bottom-quote .ar {
+  font-family: 'Noto Naskh Arabic', serif;
+  font-size: 1.3rem;
+  color: white;
+  direction: rtl;
+}
